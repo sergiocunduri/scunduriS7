@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="scunduriS7.Vistas.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="VENTANA DE LOGIN" FontSize="24" HorizontalOptions="Center"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="USUARIO" FontSize="20" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="CONTRASEÑA" FontSize="20" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtUsuario" Placeholder="Ingrese usuario" Grid.Row="0" Grid.Column="1" />
+                <Entry x:Name="txtContrasena" Placeholder="Ingrese Contraseña" Grid.Row="1" Grid.Column="1" />
+                <Button x:Name="btnIniciar" Text="INICIAR" Clicked="btnIniciar_Clicked" Grid.Row="2" Grid.Column="0"/>
+                <Button x:Name="btnRegistro" Text="REGISTRO" Clicked="btnRegistro_Clicked" Grid.Row="2" Grid.Column="1"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
