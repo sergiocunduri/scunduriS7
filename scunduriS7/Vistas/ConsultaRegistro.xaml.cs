@@ -31,7 +31,8 @@ namespace scunduriS7.Vistas
 
         private void listaEstudiantes_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-
+            var objetoEstudiante = (Estudiante)e.SelectedItem;
+            Navigation.PushAsync(new Elemento(objetoEstudiante));
         }
     }
 }

@@ -4,9 +4,12 @@
              x:Class="scunduriS7.Vistas.Elemento">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="ACTUALIZAR - ELIMINAR" FontSize="20" HorizontalOptions="Center" TextColor="Red"/>
+            <Entry x:Name="txtNombre" />
+            <Entry x:Name="txtUsuario" />
+            <Entry x:Name="txtContrasena" />
+            <Button Text="ACTUALIZAR" x:Name="btnActualizar" Clicked="btnActualizar_Clicked"/>
+            <Button Text="ELIMINAR" x:Name="btnEliminar" Clicked="btnEliminar_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
